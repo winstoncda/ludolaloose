@@ -2,11 +2,11 @@
   "name": "golembro-s",
   "version": "1.0.0",
   "main": "index.js",
-"scripts": {
-  "server": "nodemon firstServer/index.js",
-  "start": "node firstServer/index.js",
-  "build": "npm install && npm install --prefix client && npm run build --prefix client"
-},
+  "scripts": {
+    "server": "nodemon Back/index.js",
+    "start": "node Back/index.js",
+    "build": "npm install && npm install --prefix Front && npm run build --prefix Front"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Rae62/GolemBro-s.git"
