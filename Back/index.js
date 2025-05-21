@@ -35,10 +35,6 @@ mongoose
 
 app.use(express.static(path.join(__DIRNAME, "/Front/dist")));
 
-const routes = require("./routes");
-
-app.use(routes);
-
 app.get("*", (req, res) => {
   res.sendFile(path.join(__DIRNAME, "Front", "dist", "index.html"));
 });
